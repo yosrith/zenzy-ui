@@ -36,7 +36,8 @@ class MainActivity : AppCompatActivity() {
 
         // Handle Signup Button Click
         signupButton.setOnClickListener {
-            Toast.makeText(this, "Signup functionality not implemented yet", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, SignupActivity::class.java)
+            startActivity(intent)
         }
     }
 
